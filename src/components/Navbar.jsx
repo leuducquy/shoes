@@ -25,8 +25,8 @@ const Navbar = () => {
           className="hidden dark:block"
         />
         <span className="text-2xl font-[1000] text-center dark:text-white">
-          SNKR.
-          <span className="font-extrabold text-sm">hub</span>
+         Shoes.
+          <span className="font-extrabold text-sm">store</span>
         </span>
       </div>
 
