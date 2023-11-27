@@ -102,7 +102,7 @@ const PreviewCard = ({ shoe }) => {
               {name}
             </h3>
             <h3 className="text-2xl font-semibold mb-7 dark:text-white">
-              vnd {money.format( `${price}00`)}
+              \ {money.format( `${price}00`)}
             </h3>
             <small className="text-black  dark:text-white text-sm">
               {desc}

@@ -63,7 +63,7 @@ const Card = ({ shoe }) => {
                 Add to Cart
               </button>
             )}
-            <span className="text-xl font-semibold">vnd {money.format( `${price}00`)}</span>
+            <span className="text-xl font-semibold"> {money.format( `${price}00`)}</span>
           </div>
         </div>
       </div>
