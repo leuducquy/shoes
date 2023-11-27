@@ -58,7 +58,7 @@ const Card = ({ shoe }) => {
             ) : (
               <button
                 onClick={add}
-                className="bg-black dark:bg-slate-800 dark:hover:bg-black text-white p-2 rounded-md text-sm "
+                className="bg-blue- dark:bg-slate-800 dark:hover:bg-black text-grey p-2 rounded-md text-sm border-solid border-2 border-indigo-200 "
               >
                 Add to Cart
               </button>
