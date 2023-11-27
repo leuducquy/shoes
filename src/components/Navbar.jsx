@@ -25,7 +25,7 @@ const Navbar = () => {
           className="hidden dark:block"
         />
         <span className="text-2xl font-[1000] text-center dark:text-white">
-         Shoes.
+        Leu Duc Quy's Shoes.
           <span className="font-extrabold text-sm">store</span>
         </span>
       </div>
