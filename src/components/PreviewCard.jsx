@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/slices/CartSlice";
 import toast from "react-hot-toast";
-
+import { money } from "../util";
 const PreviewCard = ({ shoe }) => {
   const cart = useSelector((state) => state.cart);
 
@@ -102,7 +102,7 @@ const PreviewCard = ({ shoe }) => {
               {name}
             </h3>
             <h3 className="text-2xl font-semibold mb-7 dark:text-white">
-              ₹ {price}
+              vnd {money.format( `${price}00`)}
             </h3>
             <small className="text-black  dark:text-white text-sm">
               {desc}

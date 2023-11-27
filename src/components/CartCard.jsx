@@ -7,7 +7,7 @@ import {
   decreaseQty,
 } from "../redux/slices/CartSlice";
 import toast from "react-hot-toast";
-
+import { money } from "../util";
 const CartCard = ({ item }) => {
   const dispatch = useDispatch();
 
@@ -46,7 +46,7 @@ const CartCard = ({ item }) => {
 
               <div className="flex justify-evenly gap-x-8 mt-2 md:gap-x-0 md:justify-evenly">
                 <div className="mt-[10px] font-bold">
-                  ₹ {item.retail_price_cents}
+                  vnd  {money.format( `${item.retail_price_cents}00`)}
                 </div>
                 <div>
                   <div className="flex gap-x-6">

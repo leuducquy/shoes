@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "../redux/slices/CartSlice";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
-
+import { money } from "../util";
 const Card = ({ shoe }) => {
   const cart = useSelector((state) => state.cart);
   // console.log(shoe);
@@ -63,7 +63,7 @@ const Card = ({ shoe }) => {
                 Add to Cart
               </button>
             )}
-            <span className="text-xl font-semibold">₹ {price}</span>
+            <span className="text-xl font-semibold">vnd {money.format( `${price}00`)}</span>
           </div>
         </div>
       </div>

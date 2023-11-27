@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { checkoutCart } from "../redux/slices/CartSlice";
 
 import toast from "react-hot-toast";
-
+import { money } from "../util";
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
@@ -57,7 +57,7 @@ const Cart = () => {
                     TOTAL ITEMS : {cart.length}
                   </h1>
                   <h1 className="text-xl dark:text-white md:text-5xl font-bold text-slate-500">
-                    TOTAL PRICE : ₹ {total}
+                    TOTAL PRICE : vnd {money.format( `${total}00`)}
                   </h1>
                 </div>
                 <div>
